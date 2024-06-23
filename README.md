@@ -62,15 +62,16 @@
 
 
 1. **깃 브랜치 & 커밋 컨벤션**
-    a. Git flow 전략 사용 (참고 https://techblog.woowahan.com/2553/) 
-    - `master (main)`: 바로 product로 release(배포)할 수 있는 브랜치
-    - `dev (develop)`: product로 release할 준비가 된 가장 안정적인 브랜치로 개발이 완료된 상태라면 **master** 브랜치로 merge
-    - `feature`: 새로운 기능을 추가할 때 사용하는 브랜치로 **dev** 브랜치에서 분기하여 진행되며, 개발이 완료된 기능은 **dev** 브랜치로 merge
+
+     a. Git flow 전략 사용 (참고 https://techblog.woowahan.com/2553/) 
+      - `master (main)`: 바로 product로 release(배포)할 수 있는 브랜치
+      - `dev (develop)`: product로 release할 준비가 된 가장 안정적인 브랜치로 개발이 완료된 상태라면 **master** 브랜치로 merge
+      - `feature`: 새로운 기능을 추가할 때 사용하는 브랜치로 **dev** 브랜치에서 분기하여 진행되며, 개발이 완료된 기능은 **dev** 브랜치로 merge
         - **브랜치명 컨벤션** : `feature-{pageName}`
     
      b.   **커밋 컨벤션** 참고 (https://overcome-the-limits.tistory.com/6)
     
-2. **json-server 파일명 통일 : account_book.json**
+3. **json-server 파일명 통일 : account_book.json**
 
 ## 화면 설계
 
