@@ -38,13 +38,14 @@
 
 ---
 
-1. **모듈 설치** 
-    1. npm init
-    2. npm i vue-router
-    3. npm i axios
-    4. npm i json-server
-    5. **npm i sweetalert2 - 로그인 시 alert 창 관련**
-    6. **Google Charts (CDN) - 구글 차트 생성**
+1. **모듈 설치**
+    1. npm create vite@latest  
+    2. npm init
+    3. npm i vue-router
+    4. npm i axios
+    5. npm i json-server
+    6. **npm i sweetalert2 - 로그인 시 alert 창 관련**
+    7. **Google Charts (CDN) - 구글 차트 생성**
     
     `<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"/>`
     
