@@ -6,7 +6,7 @@
 ## 프로젝트 개요
 
 ---
-포르젝트 개요 추가
+사용자의 편의성을 위한 온라인 가계부 개발
 
 ## 프로젝트 요구사항
 
@@ -74,10 +74,14 @@
     
 3. **json-server 파일명 통일 : account_book.json**
 
+
 ## 화면 설계
 
 ---
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d262761c-6bdb-4ded-a06b-f0509b7e72f9/a94f64ff-d065-46f0-8515-2b3901040b71/Untitled.png)
+<a href="https://www.figma.com/board/24HG7obAor5MveD82vWSgE/navi?node-id=0-1&t=97yNkT5qISvuqksc-1">시스템 흐름도, DOM트리 등의 설계 바로보기</a>
+
+![image](https://github.com/user-attachments/assets/fde45ee9-19bf-4a87-b849-8d19baae9962)
+
 
 ### 로그인 (왼쪽 하단 사진)
 
@@ -109,7 +113,7 @@
 
 등록 완료 시 로그인 페이지로 이동
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d262761c-6bdb-4ded-a06b-f0509b7e72f9/7d5cda94-f04d-43e6-b7b1-c8a96a59ffba/Untitled.png)
+![image](https://github.com/user-attachments/assets/5e165c55-78ef-4521-8503-1ef58d516e0d)
 
 ### 메인 (왼쪽 상단)
 
@@ -141,15 +145,16 @@
 
 거래내역 페이지의 테이블을 클릭하여 이동하여 상세한 내용을 확인
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d262761c-6bdb-4ded-a06b-f0509b7e72f9/94a804f7-92db-4133-9aa1-7dc337f6aeed/Untitled.png)
+![image](https://github.com/user-attachments/assets/57db9c07-d7d2-4b99-bb1d-8b7c68fa8aa4)
+![image](https://github.com/user-attachments/assets/645c5fba-3b42-4212-8c5f-e0123b382d86)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d262761c-6bdb-4ded-a06b-f0509b7e72f9/7afbbb6e-2a6e-4412-a595-b4e61ca0c61a/Untitled.png)
 
 ### 공지사항
 
 공지사항을 확인 할 수 있는 페이지
 
 공지사항 페이지의 테이블을 클릭하여 이동하여 상세한 내용을 확인
+
 
 
 ## 프로젝트 구성원 및 역할
@@ -181,6 +186,17 @@
 - 페이지 이동 컴포넌트
 - 전체적인 CSS 총괄
 
+## 문제점 / 느낀점
+---
+
+**이영환**
+
+- 문제점
+    - 상위 컴포넌트와 하위 컴포넌트의 데이터 교환을 구현하는 부분에서 초반에 난항을 겪었던 것 같습니다. 리팩토링도 해보고, 팀원들의 피드백을 받아 익힐 수 있었습니다.
+    - git을 관리하는 것이 처음이었는데, 병합 과정에서 충돌이 자주 발생하여 해결에 힘을 들인 것 같습니다. 계속해서 병합과 수정과정에서 최종 결과물을 만들 수 있었습니다.
+- 느낀점
+    - Frontend 팀 프로젝트는 처음 해보는 것이었으나, component 별로 만들어 나가는 과정이 재미 있었습니다. 구현 과정에서 pinia를 쓸 일이 없었으나, 다음 기회에 pinia도 사용하여 한층 더 성장하는 개발자가 되고 싶습니다.
+
 **고재성**
 
 - 문제점
@@ -189,3 +205,19 @@
 - 느낀점
     - 지속적인 소통을 통해 프로젝트의 기획부터 구현까지 진행하며, 경험이 되었습니다.
     - Git을 이용한 협업에서 충돌을 최소화하기 위한 지속적인 통합의 중요성에 대해 알게 되었습니다.
+  
+**서나연**
+
+- 문제점
+    - json-server 에서 로그인 기능을 구현하기 어려움 → vue의 localStorage를 이용해 로그인 구현
+    - localStorage 를 강제로 삭제했을 때 바로 인식하지 못함 → localStorageCheck 함수를 작성하여 일정한 시간마다 로그인 상태 체크하도록 구현
+    - git 명령어를 잘 다루지 못해 코드 충돌 발생 → 팀원분들의 도움을 받아 문제 해결
+- 느낀점
+    - 수업시간에 예시 프로젝트로만 접했던 vue를 원하는 기능을 구현하기위해 기획부터 시작하는 점이 배운내용을 활용할 수 있어 좋았습니다. 프로젝트 경험이 적어 코드 규칙을 준수하는 것에 익숙하지 않았는데, 이번 팀프로젝트를 통해 협업하는 법을 알게되었습니다.
+
+**황근원**
+
+- 문제점
+    - 프로젝트의 UI/UX와 디자인에 대해 얕보았던 것 같습니다. 생각보다 시간이 오래 걸려서 실질적인 기능 구현에 많은 참여를 못해서 아쉽습니다.
+- 느낀점
+    - 새롭게 배운 vue를 통해 팀원들과 프로젝트를 할 수 있어서 재밌었습니다. 배우지 못한 기능들도 많이 배우게 되었고 까먹었던 내용들은 복습을 하면서 개발을 하는 것이 좋았습니다. git을 많이 사용해보지 않았는데 이번 프로젝트를 통해 조금 친숙해진 기분이 듭니다.
